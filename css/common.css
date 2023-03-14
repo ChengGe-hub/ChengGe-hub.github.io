@@ -53,7 +53,7 @@ html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.z
 .nav .nav-item{
 	float: left;
 	font-size: 16px;
-	text-align: left;
+	text-align: center;
 	width: 16.666667%;
 	box-sizing: border-box;
 	border-left: 1px solid #c9c9c9;
