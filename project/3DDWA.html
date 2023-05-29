@@ -6,6 +6,15 @@
        		<title>Cheng Ge homepage</title> 
 		<link rel="stylesheet" type="text/css" href="/css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/page.css"/>
+		<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+   		<script type="text/x-mathjax-config">
+        	MathJax.Hub.Config({
+            	tex2jax: {
+            	skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            	inlineMath: [['$','$']]
+            	}
+        	});
+    		</script>
 	</head>
 	<body>
 		<div class="header">
@@ -92,7 +101,7 @@
 					<p style="margin-bottom: 15px; text-align:justify">&ensp;&ensp;&ensp;&ensp;The intersection point of the world coordinate system $x$ axis, $y$ axis and $z$ axis is taken as the origin, the coordinate position of the geometric center of the UAV is $X(t)$, the position of the UAV identification point in the earth coordinate system is $p$, and the position of the obstacle within the perceptual range of the airborne sensor is denoted as $P_{0}^{i}(t)$(is the number of the recognized obstacle). 
 					All allowable position Spaces $\Omega (t)$ of UAVs can be expressed by a set of constraints:
 					$$\Omega (t)=A(t)\cap (B(t)+S(t))$$
-					$$A$$
+					$$A(t)=\left{\Vert X(t)-p\Vert \leq r_s | X(t)\in \right}$$
 					</p>
 					<p><img src="img/changcheng.jpg" alt=""/></p>
 					
