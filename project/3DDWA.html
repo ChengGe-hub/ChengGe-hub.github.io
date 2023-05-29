@@ -67,12 +67,17 @@
 		<div class="news-detail">
 			<div class="wrapper">
 				<div class="news-title">
-					<h2>Learning and perception of MATLAB</h2>
+					<h2>Dynamic programming</h2>
 					<p>
 						<span>Release time：2023-03-14</span>
 					</p>
 				</div>
 				<div class="news-detail-content">
+					<p style="margin-bottom: 15px; text-align:justify">&ensp;&ensp;&ensp;&ensp;Dynamic window approach (DWA) is an efficient velocity space algorithm, which uses evaluation functions such as safety, accuracy and stationarity to calculate the next motion state, and can plan the three-dimensional trajectory of agents in complex environments. 
+					Including a large number of static and dynamic obstacles, path constraints, and performance constraints. This scheme combines the route designed by the three-dimensional dynamic window method with the trajectory tracking control of the four-rotor UAV to realize the dynamic obstacle avoidance process of the UAV. 
+					The main idea of this algorithm is:First, the position of the UAV at the next moment is predicted according to the relative position and speed of the UAV and the unmanned vehicle obtained by the camera. Then, a virtual linear velocity and two angular velocities are designed for the three-dimensional path of the UAV. 
+					The system operates at a fixed sampling time, and a set of dynamic constraints are designed to limit the angular velocity, linear velocity and their acceleration of the three-dimensional trajectory.The value that can be reached at the next moment of its velocity is traversed, 
+					and all the positions that can be reached after a few seconds are predicted according to the three groups of velocity of the route. A set of evaluation functions (evaluation functions will change in each iteration) is designed to select the optimal velocity value.Three-dimensional DWA dynamic window method can design a smooth path for UAV more easily because it takes into account the speed change of trajectory.</p>
 				  	<body>
 					<center>
         				<video src="/video/Drop_line.mp4" 
@@ -81,8 +86,14 @@
               				height="432" ></video>
 					</center>
      					</body>
-					<p style="margin-bottom: 15px; text-align:justify">&ensp;&ensp;&ensp;&ensp;1</p>
-					<p style="margin-bottom: 15px;">2</p>
+					<p style="margin-bottom: 15px; text-align:justify">&ensp;&ensp;&ensp;&ensp;In this simulation, it is assumed that the obstacle and the UAV are objects with spherical radius, $r_{0}$ is the radius of the obstacle, $r_{u}$ is the radius of the UAV, the location of the obstacle and the location of the UAV can be obtained by the sensor, 
+					and the detection radius of the UAV position detection sensor is $r_{s}$.</p>
+					
+					<p style="margin-bottom: 15px; text-align:justify">&ensp;&ensp;&ensp;&ensp;The intersection point of the world coordinate system $x$ axis, $y$ axis and $z$ axis is taken as the origin, the coordinate position of the geometric center of the UAV is $X(t)$, the position of the UAV identification point in the earth coordinate system is $p$, and the position of the obstacle within the perceptual range of the airborne sensor is denoted as $P_{0}^{i}(t)$(is the number of the recognized obstacle). 
+					All allowable position Spaces $\Omega (t)$ of UAVs can be expressed by a set of constraints:
+					$$\Omega (t)=A(t)\cap (B(t)+S(t))$$
+					$$A$$
+					</p>
 					<p><img src="img/changcheng.jpg" alt=""/></p>
 					
 				</div>
